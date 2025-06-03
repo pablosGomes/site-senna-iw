@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Inter:wght@500&family=Montserrat:wght@800&family=Teko:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  max-width: 1120px;
+  margin: auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  max-width: 150px;
+  margin-right: 1rem;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: #ffca00;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after,
+.github:hover::after {
+  width: 100%;
+}
+
+.github {
+  font-weight: 600;
+  position: relative;
+}
+
+.github::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: #ffca00;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+/* Título principal */
+.victorytitle-section {
+  background-color: #003c78;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.victorytitle-section h1 {
+  color: white;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 1rem 0;
+}
+
+.separator {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background-color: #ffca00;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Subtítulo */
+.victorytitle {
+  background: #ffffff;
+  padding: 0.5rem 1rem 0;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.phrases {
+  font-size: 1.75rem;
+  color: #003c78;
+  font-weight: 200;
+  font-family: "Epilogue", sans-serif;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.ayrton-senna {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+footer {
+  position: relative;
+  background: #003c78;
+  padding: 4rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0;
+  width: 100%;
+}
+
+footer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background-color: #ffca00;
+  z-index: 2;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  background-color: #ffffff;
+  text-align: justify;
+}
+
+.content h2 {
+  font-size: 2.8rem;
+  font-family: "Montserrat", sans-serif;
+  color: #003c78;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.content h2::after {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background-color: #ffca00;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.content p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.content strong {
+  color: #003c78;
+}
+
+.hero-subtitle {
+  background: #ffffff;
+  padding: 0.5rem 1rem 0;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.hero-subtitle h2 {
+  font-size: 1.75rem;
+  color: #00a8e9;
+  font-weight: 600;
+  font-family: "Epilogue", sans-serif;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 1rem;
+}
+
+.hero-card {
+  width: 300px;
+  background-color: #ffca00;
+  border: 1px solid #003c78;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.hero-card:hover {
+  transform: translateX(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero-card:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.hero-card p {
+  margin-top: 15px;
+  font-size: 0.95em;
+  color: #393781;
+}
+
+.hero-figure img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer-copy {
+  color: #ffca00;
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.footer-autor {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
