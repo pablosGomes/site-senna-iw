@@ -16,7 +16,8 @@
         <ul class="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="#conteudo">Sobre nós</a></li>
-          <li><a href="">Memórias</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#cards">Memórias</a></li>
           <li>
             <a href="https://www.sennashop.com.br/" target="_blank"
               >Senna Shop</a
@@ -24,14 +25,17 @@
           </li>
         </ul>
         <a href="https://github.com/seuusuario" class="github" target="_blank"
-          >GitHub</a>
+          >GitHub</a
+        >
       </nav>
     </header>
     <main>
-      <section class="victorytitle-section">
-        <h1>Instituto Ayrton Senna</h1>
-        <div class="separator"></div>
-      </section>
+      <div class="container-title">
+        <section class="victorytitle-section">
+          <h1>Instituto Ayrton Senna</h1>
+          <div class="separator"></div>
+        </section>
+      </div>
 
       <section class="phrases">
         <h2>
@@ -46,23 +50,64 @@
       </section>
 
       <section class="content" id="conteudo">
-        <p>
-          O Instituto Ayrton Senna é uma organização sem fins lucrativos que há
-          mais de 25 anos trabalha para ampliar as oportunidades de crianças e
-          jovens por meio da educação de qualidade.
-        </p>
-        <p>
-          Fundado em memória do piloto Ayrton Senna, o Instituto atua em
-          parceria com redes públicas de ensino em todo o Brasil, desenvolvendo
-          políticas educacionais, formações para educadores e soluções
-          inovadoras com base em evidências.
-        </p>
-        <p>
-          Com a missão de transformar o Brasil por meio da educação, o Instituto
-          já impactou a vida de milhões de estudantes e professores. Acreditamos
-          que cada criança tem o direito de se desenvolver plenamente e
-          construir um futuro com mais possibilidades.
-        </p>
+        <div class="content-with-hexagons">
+          <div class="content-text">
+            <p>
+              O Instituto Ayrton Senna é uma organização sem fins lucrativos que
+              há mais de 25 anos trabalha para ampliar as oportunidades de
+              crianças e jovens por meio da educação de qualidade. Fundado em
+              memória do piloto Ayrton Senna, o Instituto atua em parceria com
+              redes públicas de ensino em todo o Brasil, desenvolvendo políticas
+              educacionais, formações para educadores e soluções inovadoras com
+              base em evidências. Com a missão de transformar o Brasil por meio
+              da educação, o Instituto já impactou a vida de milhões de
+              estudantes e professores. Acreditamos que cada criança tem o
+              direito de se desenvolver plenamente e construir um futuro com
+              mais possibilidades.
+            </p>
+          </div>
+          <div
+            class="content-hexagons"
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 20px;
+              padding-top: 2rem;
+            "
+          >
+            <div class="hexagon-item">
+              <div
+                class="hexagon"
+                style="background-image: url('imgs/senna-sonic.jpg')"
+              ></div>
+            </div>
+            <div class="hexagon-item">
+              <div
+                class="hexagon"
+                style="background-image: url('imgs/senna-91.jpg')"
+              ></div>
+            </div>
+            <div class="hexagon-item">
+              <div
+                class="hexagon"
+                style="background-image: url('imgs/senna-capacete-amarelo.jpg')"
+              ></div>
+            </div>
+            <div class="hexagon-item">
+              <div
+                class="hexagon"
+                style="background-image: url('imgs/senna-williams-1994.jpg')"
+              ></div>
+            </div>
+            <div class="hexagon-item">
+              <div
+                class="hexagon"
+                style="background-image: url('imgs/senna-mclaren-perfil.jpg')"
+              ></div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <div class="hero" id="cards">
@@ -75,13 +120,7 @@
               <img src="imgs/senna-sonic.jpg" alt="senna trofeu" />
             </div>
             <h2 class="hero-figure-title">GP de Suzuka – Japão, 1993</h2>
-            <p class="hero-figure-description">
-              No lendário circuito de Suzuka, Ayrton Senna venceu sua última
-              corrida pela McLaren em grande estilo. Como prêmio, recebeu um
-              troféu inusitado e icônico: uma estatueta do Sonic, símbolo da
-              SEGA, patrocinadora do GP. Um momento marcante que uniu a
-              velocidade do tricampeão com o mascote mais rápido dos games.
-            </p>
+            <a href="#modal1" class="btn">Saiba Mais</a>
           </div>
 
           <div class="hero-card">
@@ -89,13 +128,7 @@
               <img src="imgs/senna-91.jpg" alt="senna trofeu" />
             </div>
             <h2 class="hero-figure-title">GP do Brasil – Interlagos, 1991</h2>
-            <p class="hero-figure-description">
-              Na sua primeira vitória em casa, Ayrton Senna enfrentou o
-              improvável: nas voltas finais, sua McLaren travou na 6ª marcha.
-              Mesmo com dores físicas e o carro quase irreconhecível, ele
-              segurou a liderança até o fim, cruzando a linha de chegada no
-              grito. Uma vitória épica que emocionou o Brasil inteiro.
-            </p>
+            <a href="#modal2" class="btn">Saiba Mais</a>
           </div>
 
           <div class="hero-card">
@@ -105,13 +138,7 @@
             <h2 class="hero-figure-title">
               Senna & Corinthians – Orgulho Alvinegro
             </h2>
-            <p class="hero-figure-description">
-              Em uma das imagens mais marcantes fora das pistas, Ayrton Senna
-              aparece vestindo o macacão da McLaren e, por baixo, revela com
-              orgulho a camisa do Corinthians. Ídolo dentro e fora dos
-              autódromos, Senna mostrava que a garra e a paixão pelo Timão
-              também corriam nas veias do tricampeão.
-            </p>
+            <a href="#modal3" class="btn">Saiba Mais</a>
           </div>
 
           <div class="hero-card">
@@ -121,21 +148,183 @@
             <h2 class="hero-figure-title">
               Senna & Prost – Rivalidade e Respeito
             </h2>
-            <p class="hero-figure-description">
-              No GP da Austrália de 1993, última corrida de Alain Prost na
-              Fórmula 1, Ayrton Senna surpreendeu ao convidá-lo para o pódio e
-              erguer sua mão em um gesto de respeito. Um momento emocionante que
-              selou a paz entre os dois maiores rivais da era dourada da F1,
-              mostrando que a grandeza vai além da competição.
-            </p>
+            <a href="#modal4" class="btn">Saiba Mais</a>
           </div>
         </div>
       </div>
+
+      <!-- Galeria de imagens -->
+      <section class="gallery-section" id="galeria">
+        <h2 class="gallery-title">Galeria Ayrton Senna</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="imgs/senna-sonic.jpg" alt="Senna com troféu Sonic" />
+            <div class="gallery-overlay">
+              <h3>GP de Suzuka 1993</h3>
+              <p>Última vitória pela McLaren com o icônico troféu do Sonic</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="imgs/senna-91.jpg" alt="Senna GP Brasil 1991" />
+            <div class="gallery-overlay">
+              <h3>GP do Brasil 1991</h3>
+              <p>Vitória épica em casa com o carro travado na 6ª marcha</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="imgs/senna-timao.png" alt="Senna Corinthians" />
+            <div class="gallery-overlay">
+              <h3>Senna Corinthiano</h3>
+              <p>O tricampeão mostrando sua paixão pelo Timão</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="imgs/senna-prost.jpg" alt="Senna e Prost" />
+            <div class="gallery-overlay">
+              <h3>Senna & Prost</h3>
+              <p>Momento de respeito entre os maiores rivais da F1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="imgs/senna-capacete-amarelo.jpg"
+              alt="Senna com capacete amarelo"
+            />
+            <div class="gallery-overlay">
+              <h3>Capacete Amarelo</h3>
+              <p>O icônico capacete amarelo que marcou uma era</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="imgs/senna-williams-1994.jpg" alt="Senna Williams 1994" />
+            <div class="gallery-overlay">
+              <h3>Williams 1994</h3>
+              <p>Última temporada do tricampeão mundial</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="imgs/senna-mclaren-perfil.jpg"
+              alt="Senna McLaren perfil"
+            />
+            <div class="gallery-overlay">
+              <h3>Era McLaren</h3>
+              <p>Os anos dourados com a equipe inglesa</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="imgs/senna-jovem-retrato.jpg" alt="Senna jovem" />
+            <div class="gallery-overlay">
+              <h3>Jovem Promessa</h3>
+              <p>O início de uma lenda da Fórmula 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="imgs/senna-primeiro-kart.webp"
+              alt="Senna primeiro kart"
+            />
+            <div class="gallery-overlay">
+              <h3>Primeiro Kart</h3>
+              <p>Onde tudo começou: os primeiros passos no kartismo</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="imgs/senna-bandeira-brasil.jpeg"
+              alt="Senna com bandeira do Brasil"
+            />
+            <div class="gallery-overlay">
+              <h3>Orgulho Nacional</h3>
+              <p>Representando o Brasil no mundo</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="imgs/senna-africa-do-sul.webp"
+              alt="Senna África do Sul"
+            />
+            <div class="gallery-overlay">
+              <h3>GP África do Sul</h3>
+              <p>Momentos marcantes nas pistas internacionais</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="imgs/maxresdefault.webp" alt="Senna com crianças" />
+            <div class="gallery-overlay">
+              <h3>Senna e as Crianças</h3>
+              <p>O lado humano do campeão mundial</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
       <p class="footer-copy">Copyright &lt;InstitutoAyrtonSenna /&gt; 2025</p>
       <p class="footer-autor">Feito por Pablo</p>
     </footer>
+
+    <!-- Modais -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>GP de Suzuka – Japão, 1993</h2>
+        <p>
+          O Grande Prêmio do Japão de 1993, realizado no circuito de Suzuka, foi
+          um marco na carreira de Ayrton Senna O que tornou esta vitória ainda
+          mais especial foi o troféu inusitado A imagem de Senna segurando o
+          troféu do Sonic simboliza perfeitamente
+          <a href="#" onclick="history.back();" class="modal-close-btn"
+            >Fechar</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>GP do Brasil – Interlagos, 1991</h2>
+        <p>
+          Na sua primeira vitória em casa, Ayrton Senna enfrentou o improvável:
+          nas voltas finais, sua McLaren travou na 6ª marcha. Mesmo com dores
+          físicas e o carro quase irreconhecível, ele segurou a liderança até o
+          fim, cruzando a linha de chegada no grito. Uma vitória épica que
+          emocionou o Brasil inteiro.
+        </p>
+        <a href="#" onclick="history.back();" class="modal-close-btn">Fechar</a>
+      </div>
+    </div>
+
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Senna & Corinthians – Orgulho Alvinegro</h2>
+        <p>
+          Em uma das imagens mais marcantes fora das pistas, Ayrton Senna
+          aparece vestindo o macacão da McLaren e, por baixo, revela com orgulho
+          a camisa do Corinthians. Ídolo dentro e fora dos autódromos, Senna
+          mostrava que a garra e a paixão pelo Timão também corriam nas veias do
+          tricampeão.
+        </p>
+        <a href="#" onclick="history.back();" class="modal-close-btn">Fechar</a>
+      </div>
+    </div>
+
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Senna & Prost – Rivalidade e Respeito</h2>
+        <p>
+          No GP da Austrália de 1993, última corrida de Alain Prost na Fórmula
+          1, Ayrton Senna surpreendeu ao convidá-lo para o pódio e erguer sua
+          mão em um gesto de respeito. Um momento emocionante que selou a paz
+          entre os dois maiores rivais da era dourada da F1, mostrando que a
+          grandeza vai além da competição.
+        </p>
+        <a href="#" onclick="history.back();" class="modal-close-btn">Fechar</a>
+      </div>
+    </div>
   </body>
 </html>
