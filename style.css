@@ -608,6 +608,12 @@ html {
   }
 }
 
+.content-contato {
+  text-align: center;
+  align-items: center;
+  
+}
+
 @media (max-width: 768px) {
   .container-title {
     margin-top: 30rem;
