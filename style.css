@@ -336,6 +336,7 @@ nav a:hover::after,
   flex-direction: column;
   margin-bottom: 20px;
   font-size: 1em;
+  
 }
 
 .grupo-form label {
