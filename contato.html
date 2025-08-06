@@ -42,10 +42,77 @@
                     Fala com a gente!
 
                     Estamos aqui pra ouvir você e responder rapidinho. Seja pra saber mais sobre nossos projetos, fazer
-                    parcerias ou simplesmente trocar uma ideia sobre o legado do Ayrton Senna, é só chamar!
-                    aa
+                    parcerias ou simplesmente trocar uma ideia sobre o legado do Ayrton Senna, é só chamar! <br>
+                    basta responder o questionario abaixo!
                 </p>
             </div>
+
+            <section id="contato">
+                <div class="contato-container">
+                    <h1 class="title-formulario">Formulario para Contato</h1>
+                    <form class="formulario-contato" action="https://formsubmit.co/pablosouzagomes14@gmail.com"
+                        method="post">
+                        <div class="grupo-form">
+                            <label for="nome">Nome completo:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+
+                        <div class="grupo-form">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="grupo-form">
+                            <label for="telefone">Numero de telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" required>
+                        </div>
+
+                        <div class="grupo-form">
+                            <label for="idade">Idade:</label>
+                            <input type="number" id="idade" name="idade" min="10" max="120">
+                        </div>
+
+                        <div class="grupo-form">
+                            <label for="data">Data de aniversario</label>
+                            <input type="date" id="data" name="data">
+                        </div>
+
+                        <div class="grupo-form">
+                            <label>Gênero:</label>
+                            <input type="radio" name="genero" value="feminino"> Feminino
+                            <input type="radio" name="genero" value="masculino"> Masculino
+                            <input type="radio" name="genero" value="outro"> Outro
+                        </div>
+
+                        <div class="grupo-form">
+                            <label for="area">Motivo de contato:</label>
+                            <select id="area" name="area">
+                              <option value="td">Tirar duvidas</option>
+                              <option value="pi">Participar do instituto</option>
+                              <option value="o">outro</option>
+                            </select>
+                          </div>
+
+                        <div class="grupo-form">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                        </div>
+
+                        <div class="grupo-form">
+                            <label>O quão você gostou do nosso site?:</label>
+                            <input type="range" min="0" max="100" name="interesse">
+                          </div>
+
+                        <div class="grupo-form centraliza">
+                            <button type="submit" class="btn">Enviar</button>
+                            <input type="hidden" name="_captcha" value="false">
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </section>
+
+
         </section>
 
     </main>
